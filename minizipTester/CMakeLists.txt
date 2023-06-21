@@ -1,16 +1,20 @@
 # CMakeList.txt
 
+cmake_minimum_required(VERSION 3.22)
+
 # 프로젝트 이름 지정
-PROJECT ("minizipTester")
+project("minizipTester")
 
 # 빌드 상세 과정을 모두 출력하는 Makefile을 생성
-SET(CMAKE_VERBOSE_MAKEFILE true)
+set(CMAKE_VERBOSE_MAKEFILE true)
 
-# LINUX C++ 11 사용
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+find_package(unofficial-minizip CONFIG REQUIRED)
 
 # 실행파일
-ADD_EXECUTABLE(
+add_executable(
 	${PROJECT_NAME} 
-	"${CMAKE_CURRENT_SOURCE_DIR}/minizipTester.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/miniunz.c"
+	"${CMAKE_CURRENT_SOURCE_DIR}/minizipTester.c"
 )
+
+target_link_libraries(${PROJECT_NAME} PRIVATE unofficial::minizip::minizip)
