@@ -1,7 +1,8 @@
 {
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE" : "${env:HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake",
-        "VCPKG_CHAINLOAD_TOOLCHAIN_FILE" : "${env:EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
-        "VCPKG_TARGET_TRIPLET=wasm32-emscripten"
+        // cmake-kits.json의 kit에 더해져서 WASM만 빌드되어 주석 처리함
+        // "CMAKE_TOOLCHAIN_FILE" : "${workspaceFolder}/sdks/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        // "VCPKG_CHAINLOAD_TOOLCHAIN_FILE" : "${env:EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+        // "VCPKG_TARGET_TRIPLET" : "wasm32-emscripten"
     }
 }

@@ -1,0 +1,55 @@
+Computing installation plan...
+The following packages will be built and installed:
+    minizip:wasm32-emscripten -> 1.2.13#2 (+HEAD)
+  * zlib:wasm32-emscripten -> 1.2.13
+Additional packages (*) will be modified to complete this operation.
+Detecting compiler hash for triplet wasm32-emscripten...
+Restored 0 package(s) from /home/hyunsu00/.cache/vcpkg/archives in 6.3 us. Use --debug to see more details.
+Installing 1/2 zlib:wasm32-emscripten...
+Building zlib:wasm32-emscripten...
+warning: -- Using community triplet wasm32-emscripten. This triplet configuration is not guaranteed to succeed.
+-- [COMMUNITY] Loading triplet configuration from: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/triplets/community/wasm32-emscripten.cmake
+-- Using cached madler-zlib-v1.2.13.tar.gz.
+-- Cleaning sources at /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/buildtrees/zlib/src/v1.2.13-f30d2a168d.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/downloads/madler-zlib-v1.2.13.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-skip-building-examples.patch
+-- Applying patch 0003-build-static-or-shared-not-both.patch
+-- Applying patch 0004-android-and-mingw-fixes.patch
+-- Using source at /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/buildtrees/zlib/src/v1.2.13-f30d2a168d.clean
+-- Configuring wasm32-emscripten
+-- Building wasm32-emscripten-dbg
+-- Building wasm32-emscripten-rel
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_wasm32-emscripten/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_wasm32-emscripten/lib/pkgconfig/zlib.pc
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_wasm32-emscripten/debug/lib/pkgconfig/zlib.pc
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_wasm32-emscripten/share/zlib/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 31 ms.
+Elapsed time to handle zlib:wasm32-emscripten: 10 s
+Installing 2/2 minizip:wasm32-emscripten...
+Building minizip:wasm32-emscripten from HEAD...
+warning: -- Using community triplet wasm32-emscripten. This triplet configuration is not guaranteed to succeed.
+-- [COMMUNITY] Loading triplet configuration from: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/triplets/community/wasm32-emscripten.cmake
+-- Downloading https://api.github.com/repos/madler/zlib/git/refs/heads/master -> madler-zlib-master.version...
+-- Downloading https://github.com/madler/zlib/archive/04f42ceca40f73e2978b50e93806c2a18c1281fc.tar.gz -> madler-zlib-04f42ceca40f73e2978b50e93806c2a18c1281fc.tar.gz...
+-- Extracting source /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/downloads/madler-zlib-04f42ceca40f73e2978b50e93806c2a18c1281fc.tar.gz
+-- Applying patch 0001-remove-ifndef-NOUNCRYPT.patch
+-- Applying patch 0002-add-declaration-for-mkdir.patch
+-- Applying patch 0003-no-io64.patch
+-- Applying patch pkgconfig.patch
+-- Using source at /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/buildtrees/minizip/src/head/a18c1281fc-8b6e9a4f9e.clean
+-- Configuring wasm32-emscripten
+-- Building wasm32-emscripten-dbg
+-- Building wasm32-emscripten-rel
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_wasm32-emscripten/lib/pkgconfig/minizip.pc
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_wasm32-emscripten/debug/lib/pkgconfig/minizip.pc
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_wasm32-emscripten/share/minizip/copyright
+-- Performing post-build validation
+Elapsed time to handle minizip:wasm32-emscripten: 4.7 s
+Total install time: 15 s
+minizip provides CMake targets:
+
+    find_package(unofficial-minizip CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE unofficial::minizip::minizip)
+

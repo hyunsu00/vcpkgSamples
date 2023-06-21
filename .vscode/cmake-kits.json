@@ -1,0 +1,18 @@
+[
+    {
+        "name": "vcpkg-default",
+        "description": "CMake 툴체인으로 vcpkg 이용",
+        "toolchainFile": "${workspaceFolder}/sdks/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "isTrusted": true
+    },
+    {
+        "name": "vcpkg-Emscripten",
+        "description": "CMake 툴체인으로 vcpkg-Emscripten 이용",
+        "toolchainFile": "${workspaceFolder}/sdks/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "isTrusted": true,
+        "cmakeSettings": {
+            "VCPKG_CHAINLOAD_TOOLCHAIN_FILE" : "${env:EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+            "VCPKG_TARGET_TRIPLET" : "wasm32-emscripten"
+        }
+    }
+]

@@ -25,3 +25,77 @@ minizip provides CMake targets:
     find_package(unofficial-minizip CONFIG REQUIRED)
     target_link_libraries(main PRIVATE unofficial::minizip::minizip)
 
+Computing installation plan...
+A suitable version of cmake was not found (required v3.25.1) Downloading portable cmake 3.25.1...
+Downloading cmake...
+https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1-linux-x86_64.tar.gz->/home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/downloads/cmake-3.25.1-linux-x86_64.tar.gz
+Extracting cmake...
+The following packages will be built and installed:
+    minizip:x64-linux -> 1.2.13#2
+  * vcpkg-cmake:x64-linux -> 2023-05-04
+  * vcpkg-cmake-config:x64-linux -> 2022-02-06#1
+  * zlib:x64-linux -> 1.2.13
+Additional packages (*) will be modified to complete this operation.
+Detecting compiler hash for triplet x64-linux...
+Restored 0 package(s) from /home/hyunsu00/.cache/vcpkg/archives in 6.4 us. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake:x64-linux...
+Building vcpkg-cmake:x64-linux...
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 1.94 ms.
+Elapsed time to handle vcpkg-cmake:x64-linux: 13.6 ms
+Installing 2/4 vcpkg-cmake-config:x64-linux...
+Building vcpkg-cmake-config:x64-linux...
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 1.79 ms.
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 12.6 ms
+Installing 3/4 zlib:x64-linux...
+Building zlib:x64-linux...
+-- Downloading https://github.com/madler/zlib/archive/v1.2.13.tar.gz -> madler-zlib-v1.2.13.tar.gz...
+-- Extracting source /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/downloads/madler-zlib-v1.2.13.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-skip-building-examples.patch
+-- Applying patch 0003-build-static-or-shared-not-both.patch
+-- Applying patch 0004-android-and-mingw-fixes.patch
+-- Using source at /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/buildtrees/zlib/src/v1.2.13-f30d2a168d.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_x64-linux/lib/pkgconfig/zlib.pc
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_x64-linux/debug/lib/pkgconfig/zlib.pc
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/zlib_x64-linux/share/zlib/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 25.1 ms.
+Elapsed time to handle zlib:x64-linux: 6.9 s
+Installing 4/4 minizip:x64-linux...
+Building minizip:x64-linux...
+-- Using cached madler-zlib-v1.2.13.tar.gz.
+-- Extracting source /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/downloads/madler-zlib-v1.2.13.tar.gz
+-- Applying patch 0001-remove-ifndef-NOUNCRYPT.patch
+-- Applying patch 0002-add-declaration-for-mkdir.patch
+-- Applying patch 0003-no-io64.patch
+-- Applying patch pkgconfig.patch
+-- Using source at /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/buildtrees/minizip/src/v1.2.13-6d67a9b3e7.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_x64-linux/lib/pkgconfig/minizip.pc
+-- Fixing pkgconfig file: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_x64-linux/debug/lib/pkgconfig/minizip.pc
+-- Installing: /home/hyunsu00/github/hyunsu00/vcpkgSamples/sdks/vcpkg/packages/minizip_x64-linux/share/minizip/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 11.2 ms.
+Elapsed time to handle minizip:x64-linux: 3.9 s
+Total install time: 11 s
+minizip provides CMake targets:
+
+    find_package(unofficial-minizip CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE unofficial::minizip::minizip)
+

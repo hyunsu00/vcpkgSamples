@@ -9,7 +9,10 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/minizipTester/minizipTester",
-            "args": [],
+            "args": [
+                "sample.hwpx",
+				"../result/sample"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/samples",
             "environment": [],
@@ -22,6 +25,21 @@
                     "ignoreFailures": true
                 }
             ]
-        }
+        },
+        {
+			"name": "(node) minizipTester 시작",
+			"request": "launch",
+			"type": "node",
+			"program": "${workspaceFolder}/build/minizipTester/minizipTester.js",
+			"cwd": "${workspaceFolder}/samples",
+			"args": [
+				"sample.hwpx",
+				"../result/sample"
+			],
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"outputCapture": "std"
+		},
     ]
 }
