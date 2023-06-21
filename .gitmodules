@@ -1,6 +1,8 @@
 [submodule "SDKs/vcpkg"]
 	path = SDKs/vcpkg
 	url = https://github.com/microsoft/vcpkg
+	branch = master
 [submodule "SDKs/emsdk"]
 	path = SDKs/emsdk
 	url = https://github.com/emscripten-core/emsdk
+	branch = main
