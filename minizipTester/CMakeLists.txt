@@ -1,5 +1,4 @@
-# CMakeList.txt
-
+# CMakeLists.txt
 cmake_minimum_required(VERSION 3.22)
 
 # 프로젝트 이름 지정
