@@ -55,7 +55,7 @@
 #endif
 
 
-#include "unzip.h"
+#include <minizip/unzip.h>
 
 #define CASESENSITIVITY (0)
 #define WRITEBUFFERSIZE (8192)

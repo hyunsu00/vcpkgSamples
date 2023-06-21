@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 {
     printf("minizipTester\n");
 
-    mkdir(DR_NAME, S_FULL);
-    int ret = unzip("sample.hwpx", DR_NAME);
+    // mkdir(DR_NAME, S_FULL);
+    // int ret = unzip("sample.hwpx", DR_NAME);
 
-    printf("unz() ret = %d\n", ret);
+    // printf("unz() ret = %d\n", ret);
     return 0;
 }

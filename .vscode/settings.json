@@ -1,5 +1,7 @@
 {
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE" : "${env:HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "CMAKE_TOOLCHAIN_FILE" : "${env:HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_CHAINLOAD_TOOLCHAIN_FILE" : "${env:EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+        "VCPKG_TARGET_TRIPLET=wasm32-emscripten"
     }
 }

@@ -17,3 +17,6 @@ $ cd sdks/
 $ ./vcpkg/bootstrap-vcpkg.sh
 $ ./vcpkg/vcpkg install minizip >> ./../logs/minizip.txt
 ```
+https://thatonegamedev.com/cpp/programming-a-c-game-for-the-web-emscripten/
+
+https://dev.to/baduit/port-it-to-the-web-with-web-assembly-and-emscripten-5c7k
