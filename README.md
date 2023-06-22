@@ -12,6 +12,8 @@ $ git submodule update --init --recursive
 
 ## vcpkg 
 ```bash
+# vcpkg.io
+# https://vcpkg.io/en/index.html
 # vcpkg 개요
 # https://github.com/microsoft/vcpkg/blob/master/README_ko_KR.md
 # vcpkg 설명서
